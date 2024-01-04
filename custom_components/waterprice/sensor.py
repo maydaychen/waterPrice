@@ -32,7 +32,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 
 
 async def async_setup_platform(hass, config, async_add_devices, discovery_info=None):
-    _LOGGER.info("async_setup_platform sensor oilprice")
+    _LOGGER.info("async_setup_platform sensor waterprice")
     async_add_devices([OilPriceSensor(name=config[CONF_NAME], region=config[CONF_REGION])],True)
 
 
@@ -44,7 +44,7 @@ class OilPriceSensor(Entity):
         self._entries = {}
 
     def update(self):
-        _LOGGER.info("sensor oilprice update info from http://www.qiyoujiage.com/")
+        _LOGGER.info("sensor waterprice update info from http://www.qiyoujiage.com/")
         header = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36'
         }
