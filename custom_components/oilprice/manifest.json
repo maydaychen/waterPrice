@@ -1,0 +1,9 @@
+{
+  "domain": "waterprice",
+  "name": "waterprice",
+  "version": "0.0.1",
+  "documentation": "https://github.com/aalavender/OilPrice/blob/master/readme.md",
+  "dependencies": [],
+  "codeowners": ["@maydaychen"],
+  "requirements": ["requests"]
+}
