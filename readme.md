@@ -19,7 +19,7 @@ sensor:
 # 前台界面
 前台建议使用markdown进行自定义绘制，当然你要是觉得其他卡片也挺好看的那当然也行
 
-![avatar](https://github.com/maydaychen/WaterPrice/blob/master/1.PNG)
+![avatar](https://github.com/maydaychen/waterPrice/blob/main/1.png)
 
 直接使用markdown配置：
 ```yaml
