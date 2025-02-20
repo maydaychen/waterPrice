@@ -17,7 +17,7 @@
 sensor:
   - platform: waterprice
     name: 水费余额
-    region: 户号 
+    region: {{户号}} 
 ```
 
 

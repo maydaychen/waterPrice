@@ -44,18 +44,18 @@ class WaterPriceSensor(Entity):
         self._entries = {}
 
     def update(self):
-        _LOGGER.info("sensor waterprice update info from http://www.qiyoujiage.com/")
+        _LOGGER.info("sensor waterprice update info from https://wechat.wxwater.com.cn")
         header = {
             'Host': 'wechat.wxwater.com.cn',
             'X-Requested-With': 'XMLHttpRequest',
             'Sec-Fetch-Site': 'same-origin',
             'S_Type': 'WeChat',
-            'S_OpenID': 'o6Gpp6FeTlknxI_jyZfyDKNKRvI8',
+            'S_OpenID': '{{OpenID}}',
             'Accept-Language': 'en-US,en;q=0.9',
             'Accept-Encoding': 'gzip, deflate, br',
             'Sec-Fetch-Mode': 'cors',
             'Accept': 'application/json, text/javascript, */*; q=0.01',
-            'Referer': 'https://wechat.wxwater.com.cn/WeChat2018/WeChat/waterBill_YFF?paramid=o6Gpp6FeTlknxI_jyZfyDKNKRvI8',
+            'Referer': 'https://wechat.wxwater.com.cn/WeChat2018/WeChat/waterBill_YFF?paramid={{OpenID}}',
             'Connection': 'keep-alive',
             'Sec-Fetch-Dest': 'empty',
             'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.45(0x18002d27) NetType/WIFI Language/en'
